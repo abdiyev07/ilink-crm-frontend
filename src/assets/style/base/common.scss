@@ -1,0 +1,237 @@
+@import "base-input";
+
+.user-info {
+  display: flex;
+  gap: 50px;
+  margin-top: 35px;
+}
+
+.block {
+  &-title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  &-info {
+    &__label {
+      color: $secondary-light-1;
+      margin-bottom: 2px;
+    }
+
+    &__value {
+      color: $dark;
+    }
+  }
+}
+
+.section {
+  padding: 24px 28px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    //margin-bottom: 24px;
+
+    &_centered {
+      text-align: center;
+    }
+  }
+
+  &-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 170px;
+    padding: 25px 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    cursor: pointer;
+
+    &:hover {
+      background: #c7c7c7;
+    }
+
+    &__title {
+      color: $secondary-color;
+      font-size: 14px;
+    }
+
+    &__icon {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flex-list {
+  display: flex;
+  gap: 25px;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  padding: 2rem;
+}
+
+// base button
+
+.base-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: $dark;
+  transition: 200ms;
+  border: 1px solid $secondary-light-2;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: $white;
+  letter-spacing: 0.5px;
+
+  &-small {
+    padding: 6px 10px !important;
+  }
+}
+
+.base-button:hover {
+  background-color: $primary-light-2;
+  cursor: pointer;
+}
+
+.base-button_disabled {
+  color: #959baa;
+  border: 1.5px solid #dee2e8;
+  cursor: not-allowed;
+}
+
+.base-button_disabled:hover {
+  opacity: 1;
+}
+
+.base-button.base-button_filled {
+  background-color: white;
+  font-weight: 500;
+}
+
+.base-button_primary {
+  color: $primary;
+  border: 1.5px solid $primary;
+}
+
+.base-button_primary:hover {
+  border: 1.5px solid #2c6dfe;
+}
+
+.base-button_primary.base-button_filled {
+  color: white;
+  background-color: $primary;
+}
+
+.base-button_primary.base-button_filled:hover {
+  color: white;
+  background-color: $primary-light-1;
+}
+
+.base-button_primary.base-button_filled.base-button_disabled {
+  color: #959baa;
+  background-color: #ced3e0;
+  border-color: #ced3e0;
+}
+
+.base-button_danger {
+  color: $dark;
+  border: 1.5px solid $danger;
+  background-color: transparent;
+}
+
+.base-button_danger.base-button_filled {
+  color: white;
+  background-color: $danger;
+}
+
+// base loader
+.base-loader {
+  margin: 0 5px;
+  opacity: 0.7;
+  display: inline-block;
+}
+
+.base-loader:after {
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 4px solid $dark;
+  border-color: $dark transparent $dark transparent;
+  animation: base-loader 1.2s linear infinite;
+}
+
+.base-loader_primary:after {
+  border: 4px solid $primary;
+  border-color: $primary transparent $primary transparent;
+}
+
+.base-loader_light:after {
+  border: 4px solid #fff;
+  border-color: #fff transparent #fff transparent;
+}
+
+.base-loader_danger:after {
+  border: 4px solid $danger;
+  border-color: $danger transparent $danger transparent;
+}
+
+.base-loader_large:after {
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+  border-width: 6px;
+}
+
+@keyframes base-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

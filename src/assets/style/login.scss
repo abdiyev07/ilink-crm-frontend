@@ -1,0 +1,19 @@
+.login {
+  &-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-card {
+    width: 425px;
+
+    &__title {
+      font-size: 22px;
+      line-height: 25px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+  }
+}

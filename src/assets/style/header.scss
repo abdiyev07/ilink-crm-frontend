@@ -1,0 +1,47 @@
+.header {
+  padding: 12px 28px 12px 28px;
+  background: $header-bg;
+  color: $white;
+
+  &__logo {
+    &-link {
+      display: flex;
+      align-items: center;
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      padding: 0 16px;
+    }
+
+    &-logout {
+      padding: 0 8px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &-icon {
+      margin-right: 8px;
+    }
+  }
+}

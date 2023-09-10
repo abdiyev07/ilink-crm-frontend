@@ -1,0 +1,14 @@
+.generate-report {
+  width: 250px;
+  margin: 0 auto;
+
+  &__button {
+    margin-top: 15px;
+  }
+
+  &__info {
+    text-align: center;
+    font-size: 14px;
+    color: $secondary-color;
+  }
+}
