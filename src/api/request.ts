@@ -4,7 +4,7 @@ import store from "@/store";
 import router from "@/router";
 
 const instance = axios.create({
-  baseURL: `${apiConfig.apiUrl}`,
+  baseURL: `${apiConfig.apiUrl}/`,
   headers: {
     Accept: "application/json",
   },
