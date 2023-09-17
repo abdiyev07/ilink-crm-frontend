@@ -19,6 +19,9 @@
         />
       </div>
     </q-form>
+    <div class="mb-2 flex justify-end">
+      <GenerateExcelOfOrdersListModal />
+    </div>
     <div class="q-mt-lg">
       <q-table
         :loading="isLoading"
@@ -72,10 +75,12 @@ import { useRoute, useRouter } from "vue-router";
 import AddOrderModal from "@/views/Order/components/AddOrderModal.vue";
 import { useQuasar } from "quasar";
 import UpdateOrderModal from "@/views/Order/components/UpdateOrderModal.vue";
+import GenerateExcelOfOrdersListModal from "@/views/Order/components/GenerateExcelOfOrdersListModal.vue";
 
 export default defineComponent({
   name: "OrdersPage",
   components: {
+    GenerateExcelOfOrdersListModal,
     UpdateOrderModal,
     AddOrderModal,
     GoBackIcon,

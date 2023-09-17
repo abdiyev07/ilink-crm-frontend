@@ -1,7 +1,7 @@
 <template>
   <section class="section login-section">
     <form class="card login-card" @submit.prevent="handleFormSubmit">
-      <h4 class="login-card__title">Авторизация в Wipon (Служебный кабинет)</h4>
+      <h4 class="login-card__title">Авторизация в iLink (Служебный кабинет)</h4>
       <base-input
         v-model="phone"
         label="Телефон"
