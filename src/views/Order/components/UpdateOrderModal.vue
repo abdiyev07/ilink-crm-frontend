@@ -88,6 +88,15 @@
             map-options
           />
           <q-input v-model.trim="order.address" label="Адрес/ссылка" />
+          <q-input v-model.trim="order.client_uid" label="UID клиента" />
+          <q-select
+            filled
+            v-model="order.sub_provider"
+            :options="subProviderList"
+            label="CSI"
+            emit-value
+            map-options
+          />
           <q-card-actions align="center">
             <q-btn
               label="Изменить"
@@ -127,6 +136,8 @@ const order = ref({
   breakdown_reason: "",
   fixed_at: "",
   id: null,
+  client_uid: "",
+  sub_provider: "",
 });
 
 const workTypes = ref([
@@ -156,6 +167,15 @@ const csiList = ref([
   { label: "3", value: "3" },
   { label: "4", value: "4" },
   { label: "5", value: "5" },
+]);
+
+const subProviderList = ref([
+  { label: "i-Link Net", value: "i-Link Net" },
+  { label: "Барс iLink", value: "Барс iLink" },
+  { label: "iLink Net-2", value: "iLink Net-2" },
+  { label: "iLink Net-X", value: "iLink Net-X" },
+  { label: "iLink Telecom", value: "iLink Telecom" },
+  { label: "Telecom-17", value: "Telecom-17" },
 ]);
 
 const filterDate = (date) => {

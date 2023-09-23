@@ -20,6 +20,7 @@
             unchecked-icon="clear"
             label="Имеется ТВ"
           />
+          <q-input v-model.trim="client.address" label="Адрес клиента" />
           <q-card-actions align="center">
             <q-btn
               label="Добавить"
@@ -51,6 +52,7 @@ const client = ref({
   processed_employee_name: "",
   tariff_name: "",
   has_tv: false,
+  address: "",
 });
 
 const onSubmit = async () => {

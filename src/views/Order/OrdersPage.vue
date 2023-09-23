@@ -159,6 +159,18 @@ export default defineComponent({
         field: "csi",
       },
       {
+        name: "client_uid",
+        align: "center",
+        label: "UID клиента",
+        field: "client_uid",
+      },
+      {
+        name: "sub_provider",
+        align: "center",
+        label: "Суб. провайдер",
+        field: "sub_provider",
+      },
+      {
         name: "executors",
         align: "center",
         label: "Монтажная бригада",

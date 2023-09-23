@@ -134,6 +134,12 @@ export default defineComponent({
         format: (val) => (val ? "Да" : "Нет"),
       },
       {
+        name: "address",
+        align: "center",
+        label: "Адрес",
+        field: "address",
+      },
+      {
         name: "created_at",
         align: "center",
         label: "Дата создания заявки",
