@@ -93,7 +93,7 @@
             filled
             v-model="order.sub_provider"
             :options="subProviderList"
-            label="CSI"
+            label="Суб. провайдер"
             emit-value
             map-options
           />
