@@ -22,6 +22,8 @@
           <DatePicker
             v-model="order.fixed_at"
             :popover="{ visibility: 'click' }"
+            mode="dateTime"
+            is24hr
           >
             <template v-slot="{ inputValue, togglePopover }">
               <div @click="togglePopover()" class="dates-range">
@@ -184,6 +186,9 @@ const filterDate = (date) => {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
     timeZone: "Asia/Almaty",
   }).format(date);
 };
