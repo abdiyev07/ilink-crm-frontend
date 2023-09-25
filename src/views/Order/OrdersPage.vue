@@ -119,7 +119,7 @@ export default defineComponent({
         align: "center",
         label: "Дата устранения",
         field: "fixed_at",
-        format: (val) => formatDate(val, false),
+        format: (val) => formatDate(val, true),
       },
       {
         name: "is_free",
