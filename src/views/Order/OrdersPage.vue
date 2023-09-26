@@ -144,7 +144,7 @@ export default defineComponent({
         name: "client_type",
         align: "center",
         label: "Тип клиента",
-        field: "breakdown_reason",
+        field: "client_type",
       },
       {
         name: "status",
